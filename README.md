@@ -19,18 +19,23 @@ Download/Install
 Clone Repo
 
 Commands:
+# Create a virtualenv
+virtualenv eb-virt
 
 # Activate the virtual environment
 eb-virt\Scripts\Activate
 
+# Install packages
+pip install -r requirements.txt
+
 # Navigate to the flask application directory
 cd eb-flask
 
-# deploy the applicatino on elastic beanstalk to 
-eb deploy
-
 # Test Flask Application before deploying
 python application.py
+
+# deploy the applicatino on elastic beanstalk to 
+eb deploy
 
 # Launch the Application
 eb open 
