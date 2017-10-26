@@ -10,20 +10,20 @@ Resources:
 Instructions:
 
 Download/Install
-1) Python 3.4 for Macbook Pro
-2) Pip for terminal
-3) virtualenv
-4) awsebcli
-5) GIT
-
-Clone Repo
+1) Python 2.7 for Macbook Pro
+2) Pip for terminal; ON MAC: sudo easy_install pip
+3) Install GIT via pip
+3) Install virtualenv via pip
+4) Install awsebcli via pip
+5) Clone Repo; ON MAC: git clone {REPO}
 
 Commands:
 # Create a virtualenv
 virtualenv eb-virt
 
 # Activate the virtual environment
-eb-virt\Scripts\Activate
+Windows: eb-virt\Scripts\Activate
+Mac:    source eb-virt/bin/activate
 
 # Install packages
 pip install -r requirements.txt
@@ -42,3 +42,8 @@ eb open
 
 # Deactivate the Virtual Environment
 deactivate
+
+If you accidently hit ctrl-Z on mac instead of ctrl-C to stop flask app.
+You will need to kill the process;
+1) lsof -i :5000  <---get the PID (second from left)
+2) kill -9 PID
