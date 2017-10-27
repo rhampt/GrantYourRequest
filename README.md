@@ -6,6 +6,7 @@ Resources:
 2) https://medium.com/@rodkey/deploying-a-flask-application-on-aws-a72daba6bb80
 3) https://console.aws.amazon.com/route53
 4) https://console.aws.amazon.com/elasticbeanstalk
+5) https://github.com/BlackrockDigital/startbootstrap-freelancer
 
 Instructions:
 
