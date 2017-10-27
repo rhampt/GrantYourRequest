@@ -6,3 +6,6 @@
 6) Get picture of dad
 7) Get pictures of some of his work for in services moduals
 8) redirect ALL requests to be index.html
+9) Add security for form submissions
+10) create email account "contact@grantyourrequest.com" to send mail from
+11) Set up dad's business from google so it will show from searches
