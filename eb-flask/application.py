@@ -1,16 +1,35 @@
-from flask import Flask
+from flask import Flask, render_template, request
+from flask.ext.mail import Message, Mail
 
 # EB looks for an 'application' callable by default.
 application = Flask(__name__)
 
-# add a rule for the index page.
-application.add_url_rule('/', 'index', lambda: "Under Construction")
+application.config["MAIL_SERVER"] = "smtp.gmail.com"
+application.config["MAIL_PORT"] = 465
+application.config["MAIL_USE_SSL"] = True
+application.config["MAIL_USERNAME"] = 'grantyourreq@gmail.com'
+application.config["MAIL_PASSWORD"] = 'OOPS'
 
-# add a rule when the page is accessed with a name appended to the site
-# URL.
-application.add_url_rule('/<username>', 'hello', (lambda username:"yo"))
+mail=Mail(application)
 
+# use decorators to link the function to a url
+@application.route('/', methods=['GET', 'POST'])
+def home():
+	if request.method == 'GET':
+		return render_template('index.html')
+	if request.method == 'POST':
+		msg = Message("Message from website(person = " + str(request.form["name"]) +")", sender='grantyourreq@gmail.com', recipients=['grantyourreq@gmail.com'])
+		msg.body = """
+		From: %s
+		Phone Number: %s
+		Email: %s
+		Message:
+		%s
+		""" % (str(request.form["name"]), str(request.form["phone"]), str(request.form["email"]), str(request.form["message"]))
+		mail.send(msg)
+		return 'Form posted.'
+	
 # run the app.
 if __name__ == "__main__":
-    # Setting debug to True enables debug output. This line should be removed before deploying a production app.
-    application.run(debug=True)
+	# Setting debug to True enables debug output. This line should be removed before deploying a production app.
+	application.run(debug=False)  
