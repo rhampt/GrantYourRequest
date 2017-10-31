@@ -11,16 +11,17 @@
     <title>Grant Your Request</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="../static/css/freelancer.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/freelancer.css') }}" rel="stylesheet">
 
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
   </head>
 
   <body id="page-top">
@@ -42,10 +43,10 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#testimonials">Testiomonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#testimonials">Testiomonials</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -55,7 +56,7 @@
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <img class="img-fluid" src="../static/img/profile.png" alt="">
+        <img class="img-fluid" src="{{ url_for('static', filename='img/profile.jpg') }}" Height="256" Width="191" alt="">
         <div class="intro-text">
           <span class="name">Helping you simplify your life</span>
           <hr class="star-light">
@@ -77,7 +78,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../static/img/portfolio/Plants-Grass-icon.png" alt="Lawn Care" style="border-style: solid;">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/Plants-Grass-icon.png') }}" alt="Lawn Care" style="border-style: solid;">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -87,7 +88,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../static/img/portfolio/Car-2-icon.png" alt="Transportation" style="border-style: solid;">
+              <img class="img-fluid" src="{{ url_for('static', filename='/img/portfolio/Car-2-icon.png') }}" alt="Transportation" style="border-style: solid;">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -97,7 +98,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../static/img/portfolio/Snow-2-icon.png" alt="Winter" style="border-style: solid;">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/Snow-2-icon.png') }}" alt="Winter" style="border-style: solid;">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -107,7 +108,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../static/img/portfolio/Home-2-icon.png" alt="Home Maintenance" style="border-style: solid;">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/Home-2-icon.png') }}" alt="Home Maintenance" style="border-style: solid;">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -117,7 +118,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../static/img/portfolio/Dog-icon.png" alt="Pets" style="border-style: solid;">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/Dog-icon.png') }}" alt="Pets" style="border-style: solid;">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -127,7 +128,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../static/img/portfolio/Household-Shovel-icon.png" alt="Misc and More!" style="border-style: solid;">
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/Household-Shovel-icon.png') }}" alt="Misc and More!" style="border-style: solid;">
             </a>
           </div>
         </div>
@@ -145,8 +146,24 @@
       </div>
     </section>
 
+	<!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="container">
+        <h2 class="text-center">Testimonials</h2>
+        <hr class="star-primary">
+        <div class="row">
+          <div class="col-lg ml-auto">
+            <p>Here will be a glowing recommendation - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at metus mollis, interdum leo vitae, porta risus. Vivamus arcu turpis, faucibus a faucibus a, maximus ac purus. Vivamus cursus eros nec dignissim egestas. Aenean sed ligula id erat varius imperdiet. </p>
+          </div>
+          <div class="col-lg mr-auto">
+            <p>Here will be a glowing recommendation - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at metus mollis, interdum leo vitae, porta risus. Vivamus arcu turpis, faucibus a faucibus a, maximus ac purus. Vivamus cursus eros nec dignissim egestas. Aenean sed ligula id erat varius imperdiet. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+	
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" >
       <div class="container">
         <h2 class="text-center">Contact Me</h2>
         <hr class="star-primary">
@@ -193,22 +210,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Testimonials Section -->
-    <section class="success" id="testimonials">
-      <div class="container">
-        <h2 class="text-center">Testimonials</h2>
-        <hr class="star-light">
-        <div class="row">
-          <div class="col-lg ml-auto">
-            <p>Here will be a glowing recommendation - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at metus mollis, interdum leo vitae, porta risus. Vivamus arcu turpis, faucibus a faucibus a, maximus ac purus. Vivamus cursus eros nec dignissim egestas. Aenean sed ligula id erat varius imperdiet. </p>
-          </div>
-          <div class="col-lg mr-auto">
-            <p>Here will be a glowing recommendation - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at metus mollis, interdum leo vitae, porta risus. Vivamus arcu turpis, faucibus a faucibus a, maximus ac purus. Vivamus cursus eros nec dignissim egestas. Aenean sed ligula id erat varius imperdiet. </p>
-          </div>
-        </div>
-      </div>
-    </section>
 	
     <!-- Footer -->
     <footer class="text-center">
@@ -221,7 +222,7 @@
             </div>
             <div class="footer-col col-md">
               <h3>A History Of Success</h3>
-              <p>Can I simplify your life?<br>Contact me to find out!</p>
+              <p>Can I simplify your life?<br><a href="#contact">Contact me to find out!</a></p>
             </div>
           </div>
         </div>
@@ -260,7 +261,7 @@
                 <div class="modal-body">
                   <h2>Lawn Care</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="../static/img/portfolio/Plants-Grass-icon.png" height="256" width="256" alt="Lawn Care">
+                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Plants-Grass-icon.png') }}" height="256" width="256" alt="Lawn Care">
                   <p>We need to describe your lawn care experience here</p>
                   <ul class="list-inline item-details">
                     <li><strong>Mowing</strong></li>
@@ -294,7 +295,7 @@
                 <div class="modal-body">
                   <h2>Transportation</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="../static/img/portfolio/Car-2-icon.png" height="256" width="256" alt="Lawn Care">
+                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Car-2-icon.png') }}" height="256" width="256" alt="Lawn Care">
                   <p>We need to describe your transportation experience here</p>
                   <ul class="list-inline item-details">
                     <li><strong>Pick-up and Drop-off</strong></li>
@@ -329,7 +330,7 @@
                 <div class="modal-body">
                   <h2>Winter Work</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="../static/img/portfolio/Snow-2-icon.png" height="256" width="256" alt="Lawn Care">
+                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Snow-2-icon.png') }}" height="256" width="256" alt="Lawn Care">
                   <p>We need to describe your winter work experience here</p>
                   <ul class="list-inline item-details">
                     <li><strong>Snow Removal</strong></li>
@@ -362,7 +363,7 @@
                 <div class="modal-body">
                   <h2>Home Maintenance</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="../static/img/portfolio/Home-2-icon.png" height="256" width="256" alt="Lawn Care">
+                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Home-2-icon.png') }}" height="256" width="256" alt="Lawn Care">
                   <p>We need to describe your home maintenance experience here</p>
                   <ul class="list-inline item-details">
                     <li><strong>Power Washing</strong></li>
@@ -400,7 +401,7 @@
                 <div class="modal-body">
                   <h2>Pet Care</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="../static/img/portfolio/Dog-icon.png" height="256" width="256" alt="Lawn Care">
+                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Dog-icon.png') }}" height="256" width="256" alt="Lawn Care">
                   <p>We need to describe your pet care experience here</p>
                   <ul class="list-inline item-details">
                     <li><strong>Pet Walking</strong></li>
@@ -433,7 +434,7 @@
                 <div class="modal-body">
                   <h2>And More!</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="../static/img/portfolio/Household-Shovel-icon.png" height="256" width="256" alt="Lawn Care">
+                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Household-Shovel-icon.png') }}" height="256" width="256" alt="Lawn Care">
                   <p>We need to describe your additional experience here</p>
                   <ul class="list-inline item-details">
                     <li><strong>Indoor Odd Jobs</strong></li>
@@ -456,18 +457,18 @@
     </div>
 	
     <!-- Bootstrap core JavaScript -->
-    <script src="../static/vendor/jquery/jquery.min.js"></script>
-    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="../static/js/jqBootstrapValidation.js"></script>
-    <script src="../static/js/contact_me.js"></script>
+    <script src="{{ url_for('static', filename='js/jqBootstrapValidation.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/contact_me.js') }}"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="../static/js/freelancer.min.js"></script>
+    <script src="{{ url_for('static', filename='js/freelancer.min.js') }}"></script>
 
   </body>
 
