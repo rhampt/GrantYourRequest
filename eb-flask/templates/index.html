@@ -70,38 +70,9 @@
       <div class="container">
         <h2 class="text-center">Services Provided</h2>
         <hr class="star-primary">
+        <h4 class="text-center" style="font-weight:500;text-transform:NONE;">Click on a picture to learn more</h4>        
         <div class="row">
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#service1" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/Plants-Grass-icon.png') }}" alt="Lawn Care" style="border-style: solid;">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#service2" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="{{ url_for('static', filename='/img/portfolio/Car-2-icon.png') }}" alt="Transportation" style="border-style: solid;">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#service3" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/Snow-2-icon.png') }}" alt="Winter" style="border-style: solid;">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
+          <div class="col-sm-2 portfolio-item">
             <a class="portfolio-link" href="#service4" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
@@ -111,7 +82,37 @@
               <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/Home-2-icon.png') }}" alt="Home Maintenance" style="border-style: solid;">
             </a>
           </div>
-          <div class="col-sm-4 portfolio-item">
+          <div class="col-sm-2 portfolio-item">
+            <a class="portfolio-link" href="#service1" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{{ url_for('static', filename='/img/portfolio/Plants-Grass-icon.png') }}" alt="Lawn Care" style="border-style: solid;">
+            </a>
+          </div>
+          <div class="col-sm-2 portfolio-item">
+            <a class="portfolio-link" href="#service3" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/Snow-2-icon.png') }}" alt="Winter" style="border-style: solid;">
+            </a>
+          </div>
+          <div class="col-sm-2 portfolio-item">
+            <a class="portfolio-link" href="#service2" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/Car-2-icon.png') }}" alt="Transportation" style="border-style: solid;">
+            </a>
+          </div>
+          <div class="col-sm-2 portfolio-item">
             <a class="portfolio-link" href="#service5" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
@@ -121,7 +122,7 @@
               <img class="img-fluid" src="{{ url_for('static', filename='img/portfolio/Dog-icon.png') }}" alt="Pets" style="border-style: solid;">
             </a>
           </div>
-          <div class="col-sm-4 portfolio-item">
+          <div class="col-sm-2 portfolio-item">
             <a class="portfolio-link" href="#service6" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
@@ -246,7 +247,7 @@
     </div>
 
     <!-- Service Modals -->
-	<!-- Lawn Care -->
+	  <!-- Lawn Care -->
     <div class="portfolio-modal modal fade" id="service1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -261,14 +262,12 @@
                 <div class="modal-body">
                   <h2>Lawn Care</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Plants-Grass-icon.png') }}" height="256" width="256" alt="Lawn Care">
-                  <p>We need to describe your lawn care experience here</p>
                   <ul class="list-inline item-details">
                     <li><strong>Mowing</strong></li>
-					<li><strong>Mulsching</strong></li>
-					<li><strong>Trimming</strong></li>
-					<li><strong>Raking</strong></li>
-					<li><strong>And More!</strong></li>
+                    <li><strong>Mulsching</strong></li>
+                    <li><strong>Trimming</strong></li>
+                    <li><strong>Raking</strong></li>
+                    <li><strong>And More!</strong></li>
                   </ul>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
@@ -280,7 +279,7 @@
         </div>
       </div>
     </div>
-	<!-- Transportation -->
+	  <!-- Transportation -->
     <div class="portfolio-modal modal fade" id="service2" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -295,15 +294,13 @@
                 <div class="modal-body">
                   <h2>Transportation</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Car-2-icon.png') }}" height="256" width="256" alt="Lawn Care">
-                  <p>We need to describe your transportation experience here</p>
                   <ul class="list-inline item-details">
                     <li><strong>Pick-up and Drop-off</strong></li>
-					<li><strong>Driver</strong></li>
-					<li><strong>Errands</strong></li>
-					<li><strong>Appointment Transportation</strong></li>
-					<li><strong>Shopping</strong></li>
-					<li><strong>And More!</strong></li>
+                    <li><strong>Driver</strong></li>
+                    <li><strong>Errands</strong></li>
+                    <li><strong>Appointment Transportation</strong></li>
+                    <li><strong>Shopping</strong></li>
+                    <li><strong>And More!</strong></li>
                   </ul>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
@@ -315,7 +312,7 @@
         </div>
       </div>
     </div>
-	<!-- Winter -->
+	  <!-- Winter -->
     <div class="portfolio-modal modal fade" id="service3" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -330,13 +327,11 @@
                 <div class="modal-body">
                   <h2>Winter Work</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Snow-2-icon.png') }}" height="256" width="256" alt="Lawn Care">
-                  <p>We need to describe your winter work experience here</p>
                   <ul class="list-inline item-details">
                     <li><strong>Snow Removal</strong></li>
-					<li><strong>Sidewalk/Driveway Shoveling</strong></li>
-					<li><strong>Sidewalk/Driveway Salting</strong></li>
-					<li><strong>And More!</strong></li>
+                    <li><strong>Sidewalk/Driveway Shoveling</strong></li>
+                    <li><strong>Sidewalk/Driveway Salting</strong></li>
+                    <li><strong>And More!</strong></li>
                   </ul>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
@@ -348,7 +343,7 @@
         </div>
       </div>
     </div>
-	<!-- Home Maintenance -->
+	  <!-- Home Maintenance -->
     <div class="portfolio-modal modal fade" id="service4" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -363,18 +358,19 @@
                 <div class="modal-body">
                   <h2>Home Maintenance</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Home-2-icon.png') }}" height="256" width="256" alt="Lawn Care">
-                  <p>We need to describe your home maintenance experience here</p>
+                  <!--<img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Home-2-icon.png') }}" height="256" width="256" alt="Lawn Care"> -->                 
+                  <!--<p>We can elaborate more here</p>  -->                
                   <ul class="list-inline item-details">
+                    <li><strong>Landscaping</strong></li>
                     <li><strong>Power Washing</strong></li>
-					<li><strong>Sealing Driveways</strong></li>
-					<li><strong>Sealing Decks</strong></li>
-					<li><strong>Cleaning Gutters</strong></li>
-					<li><strong>Cleaning Home Siding</strong></li>
-					<li><strong>Painting Garages and Outdoor Trim</strong></li>
-					<li><strong>Window Washing</strong></li>
-					<li><strong>Gardening</strong></li>
-					<li><strong>And More!</strong></li>
+                    <li><strong>Sealing Driveways</strong></li>
+                    <li><strong>Sealing Decks</strong></li>
+                    <li><strong>Cleaning Gutters</strong></li>
+                    <li><strong>Cleaning Home Siding</strong></li>
+                    <li><strong>Painting Garages and Outdoor Trim</strong></li>
+                    <li><strong>Window Washing</strong></li>
+                    <li><strong>Gardening</strong></li>
+                    <li><strong>And More!</strong></li>
                   </ul>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
@@ -386,7 +382,7 @@
         </div>
       </div>
     </div>
-	<!-- Pet Care -->
+	  <!-- Pet Care -->
     <div class="portfolio-modal modal fade" id="service5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -401,13 +397,11 @@
                 <div class="modal-body">
                   <h2>Pet Care</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Dog-icon.png') }}" height="256" width="256" alt="Lawn Care">
-                  <p>We need to describe your pet care experience here</p>
                   <ul class="list-inline item-details">
                     <li><strong>Pet Walking</strong></li>
-					<li><strong>Pet Care</strong></li>
-					<li><strong>Pet Food Supply Delivery</strong></li>
-					<li><strong>And More!</strong></li>
+                    <li><strong>Pet Care</strong></li>
+                    <li><strong>Pet Food Supply Delivery</strong></li>
+                    <li><strong>And More!</strong></li>
                   </ul>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
@@ -419,7 +413,7 @@
         </div>
       </div>
     </div>
-	<!-- And More! -->
+	  <!-- And More! -->
     <div class="portfolio-modal modal fade" id="service6" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -434,16 +428,14 @@
                 <div class="modal-body">
                   <h2>And More!</h2>
                   <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="{{ url_for('static', filename='img/portfolio/Household-Shovel-icon.png') }}" height="256" width="256" alt="Lawn Care">
-                  <p>We need to describe your additional experience here</p>
                   <ul class="list-inline item-details">
                     <li><strong>Indoor Odd Jobs</strong></li>
-					<li><strong>Assembly of Items</strong></li>
-					<li><strong>Indoor Painting</strong></li>
-					<li><strong>Lifting and Storage</strong></li>
-					<li><strong>Holiday Decorations Set-up and Take-down</strong></li>
-					<li><strong>Organizing</strong></li>
-					<li><strong>And More!</strong></li>
+                    <li><strong>Assembly of Items</strong></li>
+                    <li><strong>Indoor Painting</strong></li>
+                    <li><strong>Lifting and Storage</strong></li>
+                    <li><strong>Holiday Decorations Set-up and Take-down</strong></li>
+                    <li><strong>Organizing</strong></li>
+                    <li><strong>And More!</strong></li>
                   </ul>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
