@@ -24,22 +24,23 @@ virtualenv eb-virt
 
 # Activate the virtual environment
 Windows: eb-virt\Scripts\Activate
-Mac:    source eb-virt/bin/activate
 
-# Install packages
-pip install -r requirements.txt
+Mac:    source eb-virt/bin/activate
 
 # Navigate to the flask application directory
 cd eb-flask
+
+# Install packages
+pip install -r requirements.txt
 
 # Test Flask Application before deploying
 python application.py
 
 # deploy the applicatino on elastic beanstalk to 
-eb deploy
+sudo eb deploy
 
 # Launch the Application
-eb open 
+sudo eb open 
 
 # Deactivate the Virtual Environment
 deactivate
