@@ -159,14 +159,14 @@ section.success {
       font-size: 1.5em; } }
 
 header.masthead {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 25px;
   text-align: center;
   color: white;
   background: #18BC9C; }
   header.masthead img {
     display: block;
-    margin: 0 auto 20px; }
+    margin: 0 auto 0; }
   header.masthead .intro-text .name {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 2em;
