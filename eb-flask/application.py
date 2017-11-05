@@ -7,8 +7,6 @@ project_root = os.path.dirname(__file__)
 template_path = os.path.join(project_root, 'Templates')
 application = Flask(__name__, template_folder=template_path, static_url_path="", static_folder="Static")
 
-mail=Mail(application)
-
 # use decorators to link the function to a url
 @application.route('/', methods=['GET', 'POST'])
 def home():
