@@ -1,7 +1,5 @@
 * Add Testimonials
 * Add About Me
 * Add Serving Locations
-* Add Pictures and updates statements for provided services
 * Have mom preview site to see if something needs to be added or removed
-* Add security for form submissions
 * Add business to Google and other websites
