@@ -1,5 +1,4 @@
-* Add Testimonials
+* Add one more testimonial
 * Add About Me
-* Add Serving Locations
 * Have mom preview site to see if something needs to be added or removed
 * Add business to Google and other websites
